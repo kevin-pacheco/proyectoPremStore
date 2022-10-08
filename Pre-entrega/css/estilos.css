@@ -175,7 +175,7 @@ section.tiendas-oficiales {
 .contenedorTiendasOficiales-header h2 {
   padding-bottom: 50px; }
 
-.contenedorTiendasOficiales-block {
+.contenedorTiendasOficiales-blocks .block {
   position: relative;
   display: inline-block;
   align-items: center;
