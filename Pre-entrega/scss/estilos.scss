@@ -227,30 +227,32 @@ section.tiendas-oficiales{
     padding-bottom: 50px;
 }
 
-.contenedorTiendasOficiales-block{
-    position: relative;
-    display: inline-block;
-    align-items: center;
-    background-color: #fff;
-    justify-content: space-evenly;
-    padding: 20px 50px 20px 50px;
-    margin: 10px 50px 10px 50px;
-    border: 1px solid;
-    border-color: rgb(201, 201, 201);
-    border-radius: 1px;
-}
 
-.contenedorTiendasOficiales-blocks div a{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    text-decoration: none;
-    z-index: 10;
-    background-color: #FFF;
-    opacity: 0;
-    filter: alpha(opacity=1);
+.contenedorTiendasOficiales-blocks{
+    .block{
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        background-color: #fff;
+        justify-content: space-evenly;
+        padding: 20px 50px 20px 50px;
+        margin: 10px 50px 10px 50px;
+        border: 1px solid;
+        border-color: rgb(201, 201, 201);
+        border-radius: 1px;
+    }
+    div a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        z-index: 10;
+        background-color: #FFF;
+        opacity: 0;
+        filter: alpha(opacity=1);
+    }
 }
 
 .contenedoraccesosRapidos h2{
@@ -342,29 +344,29 @@ footer{
                 font-size: 20px;
                 font-weight: bold;
                 text-align: left;
-                .btn{
-                    align-items: right;
-                    text-align: right;
+            }
+            .btn{
+                align-items: right;
+                text-align: right;
+                font-size: 13px;
+                color: hsla(188, 38%, 43%, 0.877);
+                padding: 10px 18px;
+                font-weight: 800;
+                border: 1px solid hsla(188, 38%, 50%, 0.877);
+                border-radius: 20px;
+                transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+                background-color: transparent;
+                &:hover{
+                    align-items: flex-end;
+                    cursor: pointer;
                     font-size: 13px;
-                    color: hsla(188, 38%, 43%, 0.877);
                     padding: 10px 18px;
                     font-weight: 800;
                     border: 1px solid hsla(188, 38%, 50%, 0.877);
                     border-radius: 20px;
-                    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-                    background-color: transparent;
-                    &:hover{
-                        align-items: flex-end;
-                        cursor: pointer;
-                        font-size: 13px;
-                        padding: 10px 18px;
-                        font-weight: 800;
-                        border: 1px solid hsla(188, 38%, 50%, 0.877);
-                        border-radius: 20px;
-                        box-shadow: inset 100px 0 0 100px #54b3d6;
-                        color: white;
-                        background-color: transparent;  
-                    }
+                    box-shadow: inset 100px 0 0 100px #54b3d6;
+                    color: white;
+                    background-color: transparent;  
                 }
             }
         }
